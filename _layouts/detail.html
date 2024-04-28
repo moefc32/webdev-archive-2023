@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Certificate">
+    <meta property="og:site_name" content="Mfc Website">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Certificate library by Mfc">
+    <meta property="og:image" content="https://mf-chan.com/og.jpg">
+
+    <link rel="icon" type="image/x-icon" href="{{ site.asset }}/favicon.svg">
+    <title>{{ site.name }}</title>
+
+    <link rel="stylesheet" href="{{ site.asset }}/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="{{ site.asset }}/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ site.url }}/res/style.css">
+</head>
+
+<body class="d-flex justify-content-center align-items-center p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1 class="mb-3">{{ page.title }}</h1>
+                <div class="mb-5 fs-5">{{ page.date | date: "%Y" }}</div>
+
+                {{ content }}
+
+                <div class="mt-4">
+                    <a href="{{ site.url }}/preview/{{ page.slug }}" class="btn btn-primary">
+                        <i class="fa-regular fa-window-maximize fa-fw me-1"></i> Project Preview
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ site.asset }}/bootstrap.min.js"></script>
+</body>
+
+</html>
