@@ -4,16 +4,5 @@ url: https://mf-chan.com/webdev-archive-2023
 asset: https://mf-chan.com/res
 permalink: /detail/:slug
 
-collections:
-  category:
-    output: true
-
-defaults:
-  - scope:
-      path: ""
-      type: category
-    values:
-      layout: "category"
-
 exclude:
   - generate/
