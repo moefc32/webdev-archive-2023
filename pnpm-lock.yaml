@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/noto-sans':
+        specifier: ^5.1.1
+        version: 5.1.1
       lucide-svelte:
         specifier: ^0.475.0
         version: 0.475.0(svelte@5.20.0)
@@ -196,6 +199,9 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/noto-sans@5.1.1':
+    resolution: {integrity: sha512-hO0ywqmXLSU2C++B/FQeklo/zBSQZhHJef6ik/lJNaPmagpdHkHgQb1zwMuC9pdTv7UZeuGp38ML19w2AzM0kw==}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1165,6 +1171,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@fontsource-variable/noto-sans@5.1.1': {}
 
   '@isaacs/cliui@8.0.2':
     dependencies:
