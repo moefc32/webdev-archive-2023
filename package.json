@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "@fontsource-variable/noto-sans": "^5.1.1",
+        "dotenv": "^16.4.7",
         "lucide-svelte": "^0.475.0"
     }
 }
