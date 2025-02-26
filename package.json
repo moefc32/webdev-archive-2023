@@ -7,6 +7,7 @@
         "dev": "vite dev",
         "build": "vite build",
         "preview": "vite preview",
+        "prepare": "svelte-kit sync || echo ''",
         "deploy": "test -f .env && (pnpm build && pnpx gh-pages -d build) || echo 'Error, .env file is missing, deploy aborted!'"
     },
     "devDependencies": {
