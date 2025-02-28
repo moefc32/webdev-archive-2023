@@ -1,8 +1,8 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-@import "@fontsource-variable/noto-sans";
+@import '@fontsource-variable/noto-sans';
 
 input::-ms-reveal,
 input::-ms-clear {
@@ -10,5 +10,5 @@ input::-ms-clear {
 }
 
 body {
-    font-family: "Noto Sans Variable", sans-serif;
+    font-family: 'Noto Sans Variable', sans-serif;
 }
