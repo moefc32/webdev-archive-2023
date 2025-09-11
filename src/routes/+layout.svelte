@@ -4,7 +4,10 @@
     import Header from '$lib/component/Header.svelte';
     import Footer from '$lib/component/Footer.svelte';
 
-    if ('serviceWorker' in navigator) {
+    if (
+        'serviceWorker' in navigator &&
+        !['localhost', '127.0.0.1'].includes(location.hostname)
+    ) {
         addEventListener('load', function () {
             navigator.serviceWorker.register('/service-worker.js');
         });
