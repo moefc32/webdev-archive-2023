@@ -8,7 +8,7 @@
         "build": "vite build",
         "preview": "vite preview",
         "prepare": "svelte-kit sync || echo ''",
-        "deploy": "test -f .env && (pnpm build && pnpx gh-pages -d build --dotfiles) || echo 'Error, .env file is missing, deploy aborted!'"
+        "deploy": "test -f .env && (pnpm build && pnpx gh-pages -d build --dotfiles) || echo 'Error occured, deploy aborted!'"
     },
     "devDependencies": {
         "@sveltejs/adapter-static": "^3.0.9",
