@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+
+@import '@fontsource-variable/noto-sans';
+
+input::-ms-reveal,
+input::-ms-clear,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+body {
+    font-family: 'Noto Sans Variable', sans-serif;
+}

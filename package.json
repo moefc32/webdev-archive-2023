@@ -1,0 +1,35 @@
+{
+    "name": "webdev-archive-2023",
+    "private": true,
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "deploy": "pnpm build && pnpx gh-pages -d dist --dotfiles"
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.1.18",
+        "daisyui": "5.5.18",
+        "gh-pages": "^6.3.0",
+        "tailwindcss": "^4.1.18",
+        "vite-plugin-pwa": "^1.2.0"
+    },
+    "dependencies": {
+        "@astrojs/svelte": "^7.2.5",
+        "@fontsource-variable/noto-sans": "^5.2.10",
+        "aos": "^2.3.4",
+        "astro": "^5.17.2",
+        "chart.js": "^4.5.1",
+        "lucide-svelte": "^0.563.0",
+        "svelte": "^5.50.3"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "esbuild",
+            "sharp",
+            "workerd"
+        ]
+    }
+}
