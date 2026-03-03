@@ -2,6 +2,8 @@
 import '../styles/global.css';
 import 'aos/dist/aos.css';
 
+import { ClientRouter } from 'astro:transitions';
+
 import RegisterSW from '../components/RegisterSW.svelte';
 
 const { pageTitle } = Astro.props;
@@ -33,6 +35,8 @@ const openGraph = {
         <meta property="og:description" content={openGraph.description} />
         <meta property="og:image" content="/favicon.png" />
         <meta property="og:type" content="website" />
+
+        <ClientRouter />
 
         <script
             src="https://www.googletagmanager.com/gtag/js?id=UA-131278165-1"
