@@ -7,23 +7,23 @@
         "dev": "astro dev",
         "build": "astro build",
         "preview": "astro preview",
-        "deploy": "pnpm build && pnpx gh-pages -d dist --dotfiles"
+        "deploy": "astro build && pnpx gh-pages -d dist --dotfiles"
     },
     "devDependencies": {
-        "@tailwindcss/vite": "^4.2.1",
+        "@tailwindcss/vite": "^4.2.2",
         "daisyui": "^5.5.19",
         "gh-pages": "^6.3.0",
-        "tailwindcss": "^4.2.1",
+        "tailwindcss": "^4.2.2",
         "vite-plugin-pwa": "^1.2.0"
     },
     "dependencies": {
-        "@astrojs/svelte": "^7.2.5",
+        "@astrojs/svelte": "8.0.0",
         "@fontsource-variable/noto-sans": "^5.2.10",
         "aos": "^2.3.4",
-        "astro": "^5.18.1",
+        "astro": "6.0.4",
         "chart.js": "^4.5.1",
         "lucide-svelte": "^0.563.0",
-        "svelte": "^5.53.12"
+        "svelte": "^5.54.1"
     },
     "pnpm": {
         "onlyBuiltDependencies": [
