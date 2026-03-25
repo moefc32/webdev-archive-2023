@@ -2,8 +2,6 @@
 import '../styles/global.css';
 import 'aos/dist/aos.css';
 
-import RegisterSW from '../components/RegisterSW.svelte';
-
 const { pageTitle } = Astro.props;
 
 const siteTitle = 'Webdev Archive 2023 by Faizal Chan.';
@@ -56,6 +54,5 @@ const openGraph = {
         <div style="display: contents">
             <slot />
         </div>
-        <RegisterSW client:load />
     </body>
 </html>
