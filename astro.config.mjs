@@ -2,7 +2,7 @@ import { setMaxListeners } from 'events';
 import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
 import tailwindcss from '@tailwindcss/vite';
-import { VitePWA } from 'vite-plugin-pwa';
+import AstroPWA from '@vite-pwa/astro';
 
 setMaxListeners(12);
 
@@ -10,23 +10,16 @@ export default defineConfig({
     vite: {
         plugins: [
             tailwindcss(),
-            VitePWA({
-                manifest: false,
-                injectRegister: 'auto',
-                registerType: 'autoUpdate',
-                filename: 'service-worker.js',
-                workbox: {
-                    globPatterns: ['**/*.{js,css,html,svg,png,jpg,jpeg,ico,json,woff2}'],
-                    maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
-                },
-            }),
         ],
         resolve: {
-            noExternal: ['lucide-svelte'],
+            noExternal: [
+                'lucide-svelte',
+            ],
         },
     },
     integrations: [
         svelte(),
+        AstroPWA(),
     ],
     server: {
         port: 4000,
